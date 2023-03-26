@@ -1,6 +1,5 @@
 import sys
-import logging
-import logger
+from src.logger import logging
 
 #inside execution_info you'd find tb_frame,filecode then filename
 def error_message_detail(error,error_detail:sys):

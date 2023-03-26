@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
+
+//"python.defaultInterpreterPath": "C:\Users\GT\Documents\GitHub\mLe2e_2023\venv\python.exe",
+//"code-runner.executorMap": {"python": "call C:/Users/yyguy/.plotting_test/Scripts/activate.bat && python -u"}
