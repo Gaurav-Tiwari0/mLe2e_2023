@@ -10,6 +10,10 @@ from src.logger import logging
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
+
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
+
 from dataclasses import dataclass
 # dataclasses introduced in py 3.9,provides a decorator which implicitly adds method such as __init__(),__repr__(), __eq__() to a user defned class. Since no need to use init i can diectly define the class variables.Making code readable.
 
@@ -47,6 +51,10 @@ class DataIngestion:
 # initializing & running. Artifact folder created
 if __name__=="__main__":
     obj=DataIngestion()
-    obj.initiate_data_ingestion()
+    #obj.initiate_data_ingestion()
+    train_data,test_data=obj.initiate_data_ingestion()
+    
+    data_transformation=DataTransformation()
+    data_transformation.initiate_data_transformation(train_data,test_data)
             
             
